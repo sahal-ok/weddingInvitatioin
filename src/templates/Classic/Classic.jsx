@@ -1,3 +1,4 @@
+import "./Classic.css"
 function formatDate(date) {
 
   if (!date) {

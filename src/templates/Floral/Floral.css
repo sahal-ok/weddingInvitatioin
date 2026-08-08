@@ -1,0 +1,147 @@
+
+/* =========================
+   FLORAL TEMPLATE
+========================= */
+
+.floral-invitation {
+  background: #eee2dc;
+
+  color: #684d48;
+
+  padding: 30px;
+}
+
+.floral-inner {
+  min-height: 620px;
+
+  border: 1px solid
+    rgba(104, 77, 72, 0.25);
+
+  text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.floral-decoration {
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+
+  font-size: 70px;
+
+  opacity: 0.15;
+}
+
+.floral-small {
+  font-size: 8px;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 35px;
+}
+
+.floral-inner h1 {
+  font-family: Georgia, serif;
+
+  font-size: 50px;
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  margin: 0;
+}
+
+.floral-and {
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  font-style: italic;
+
+  margin: 15px;
+}
+
+.floral-message {
+  max-width: 220px;
+
+  font-family: Georgia, serif;
+
+  font-style: italic;
+
+  line-height: 1.6;
+
+  font-size: 13px;
+
+  margin: 35px 0;
+}
+
+.floral-details {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.floral-details strong {
+  font-family: Georgia, serif;
+
+  font-weight: 400;
+
+  font-size: 15px;
+}
+
+.floral-details span {
+  font-size: 11px;
+}
+
+.floral-details p {
+  font-size: 11px;
+
+  margin: 0;
+}
+
+.floral-map-button {
+  margin-top: 25px;
+
+  padding: 11px 20px;
+
+  border: 1px solid currentColor;
+
+  border-radius: 30px;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .floral-inner {
+    padding: 30px 20px;
+  }
+
+  .floral-inner h1 {
+    font-size: 44px;
+  }
+
+  .floral-decoration {
+    font-size: 55px;
+  }
+}
+

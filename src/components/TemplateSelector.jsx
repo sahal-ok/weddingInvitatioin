@@ -4,12 +4,10 @@ function TemplateSelector({
 }) {
 
   const selectTemplate = (template) => {
-
     setWedding((previous) => ({
       ...previous,
       template,
     }));
-
   };
 
   return (
@@ -29,18 +27,22 @@ function TemplateSelector({
 
       <div className="template-options">
 
+        {/* CLASSIC */}
+
         <button
           className={`template-option ${
             wedding.template === "classic"
               ? "selected"
               : ""
           }`}
-          onClick={() =>
-            selectTemplate("classic")
-          }
+          onClick={() => selectTemplate("classic")}
         >
+
           <div className="mini-preview classic-card">
-            <span>WEDDING</span>
+
+            <span>
+              WEDDING
+            </span>
 
             <strong>
               Aisha
@@ -49,12 +51,17 @@ function TemplateSelector({
               <br />
               Sahal
             </strong>
+
           </div>
 
           <span className="template-name">
             Classic
           </span>
+
         </button>
+
+
+        {/* MODERN */}
 
         <button
           className={`template-option ${
@@ -62,12 +69,14 @@ function TemplateSelector({
               ? "selected"
               : ""
           }`}
-          onClick={() =>
-            selectTemplate("modern")
-          }
+          onClick={() => selectTemplate("modern")}
         >
+
           <div className="mini-preview modern-card">
-            <span>THE WEDDING OF</span>
+
+            <span>
+              THE WEDDING OF
+            </span>
 
             <strong>
               AISHA
@@ -76,12 +85,17 @@ function TemplateSelector({
               <br />
               SAHAL
             </strong>
+
           </div>
 
           <span className="template-name">
             Modern
           </span>
+
         </button>
+
+
+        {/* FLORAL */}
 
         <button
           className={`template-option ${
@@ -89,12 +103,14 @@ function TemplateSelector({
               ? "selected"
               : ""
           }`}
-          onClick={() =>
-            selectTemplate("floral")
-          }
+          onClick={() => selectTemplate("floral")}
         >
+
           <div className="mini-preview floral-card">
-            <span>WITH LOVE</span>
+
+            <span>
+              WITH LOVE
+            </span>
 
             <strong>
               Aisha
@@ -103,11 +119,49 @@ function TemplateSelector({
               <br />
               Sahal
             </strong>
+
           </div>
 
           <span className="template-name">
             Floral
           </span>
+
+        </button>
+
+
+        {/* MUSLIM */}
+
+        <button
+          className={`template-option ${
+            wedding.template === "muslim"
+              ? "selected"
+              : ""
+          }`}
+          onClick={() => selectTemplate("muslim")}
+        >
+
+          <div className="mini-preview muslim-card">
+
+            <div className="mini-muslim-pattern"></div>
+
+            <span className="mini-muslim-symbol">
+              ☾
+            </span>
+
+            <strong>
+              Aisha
+              <br />
+              &
+              <br />
+              Sahal
+            </strong>
+
+          </div>
+
+          <span className="template-name">
+            Muslim
+          </span>
+
         </button>
 
       </div>

@@ -1,3 +1,5 @@
+import "./Floral.css"
+
 function formatDate(date) {
 
   if (!date) {
